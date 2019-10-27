@@ -62,10 +62,14 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem 'administrate'
 gem 'bootstrap', '~> 4.0.0'
+gem 'jquery-rails'
+gem 'jquery-easing-rails'
+gem 'angularjs-rails'
+gem 'font-awesome-rails'
 gem 'bourbon'
 gem 'devise'
 gem 'high_voltage'
-gem 'mysql2', '~> 0.3.18'
+gem 'mysql2', '~> 0.5.2'
 
 group :development do
   gem 'better_errors'
