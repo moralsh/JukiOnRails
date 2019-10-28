@@ -1,0 +1,43 @@
+<%= render "layouts/header" %>
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<div class="container">
+<h1>Productos</h1>
+    <%= form_with scope: :producto, url: productos_path, local: true do |form| %>
+        <p>
+            <%= form.label :nombre %><br>
+            <%= form.text_field :nombre %>
+        </p>
+    
+        <p>
+            <%= form.label :nombre_bonito %><br>
+            <%= form.text_field :nombre_bonito %>
+        </p>
+
+        <p>
+            <%= form.label :descripciom %><br>
+            <%= form.text_area :descripcion %>
+        </p>
+    
+        <p>
+            <%= form.label :precio %><br>
+            <%= form.number_field :precio %><br>
+        </p>
+
+        <p>
+            <%= form.label :activo %><br>
+            <%= form.check_box :activo %><br>
+        </p>
+
+        <p>
+            <%= form.submit %>
+        </p>
+    <% end %>
+    <%= link_to 'Volver al catálogo', productos_path %>
+</div
+<%= render "layouts/footer" %>

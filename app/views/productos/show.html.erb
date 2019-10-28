@@ -1,0 +1,25 @@
+<%= render "layouts/header" %>
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<div class="container">
+    <% if @producto.activo %>
+        <h1>Juki <%= @producto.nombre %></h1>
+        <p>
+        <%= @producto.descripcion %>
+        </p>
+        
+        <p>
+        <strong>Precio: </strong>
+        <%= @producto.precio %>€
+        </p>
+    <% else %>
+        <p> El <% @producto.nombre %> no se encuentra a la venta ahora mismo.</p>
+    <% end %>
+    <%= link_to 'Volver al catálogo', productos_path %>
+</div
+<%= render "layouts/footer" %>

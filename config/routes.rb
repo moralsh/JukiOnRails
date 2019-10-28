@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   get 'welcome/index'
+  resources :productos
   root 'welcome#index'
 
   devise_for :users

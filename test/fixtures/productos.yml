@@ -1,14 +1,12 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  id: 
   nombre: MyString
   descripcion: MyText
   precio: 1.5
   activo: false
 
 two:
-  id: 
   nombre: MyString
   descripcion: MyText
   precio: 1.5
